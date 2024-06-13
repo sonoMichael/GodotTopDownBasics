@@ -1,8 +1,8 @@
 [gd_scene load_steps=65 format=3 uid="uid://bnls4ev3bclmw"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/Player.gd" id="1_g0q7n"]
-[ext_resource type="Resource" uid="uid://cvv1b63067me8" path="res://Resources/PlayerInventory.tres" id="2_8arwr"]
 [ext_resource type="Texture2D" uid="uid://daa5jyhmydguj" path="res://Arts/sprout-land/Characters/Basic Character All Actions.png" id="2_m1sxn"]
+[ext_resource type="PackedScene" uid="uid://c668n5o0srxjn" path="res://Scenes/Components/InventoryUIComponent.tscn" id="3_t6lx3"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mqntf"]
 radius = 2.0
@@ -548,7 +548,6 @@ graph_offset = Vector2(-169, 67)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_g0q7n")
-Inventory = ExtResource("2_8arwr")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
@@ -579,3 +578,5 @@ parameters/Hoe/blend_position = Vector2(-0.00639999, 0.915859)
 parameters/Idle/blend_position = Vector2(-0.0448, 1.08811)
 parameters/Walk/blend_position = Vector2(0.00320005, 0.906167)
 parameters/Water/blend_position = Vector2(-0.00639999, 0.862327)
+
+[node name="InventoryUIComponent" parent="." instance=ExtResource("3_t6lx3")]

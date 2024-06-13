@@ -903,3 +903,4 @@ layer_4/name = "Environment"
 layer_4/tile_data = PackedInt32Array()
 
 [node name="Player" parent="." instance=ExtResource("1_j66lb")]
+Speed = 75.0
