@@ -6,6 +6,7 @@ extends CharacterBody2D
 var groundLayer : int = 1
 
 @export var Speed : float = 75.0
+@export var Inventory : Inventory
 
 
 func _physics_process(delta):
