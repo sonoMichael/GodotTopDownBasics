@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="InventoryComponent" load_steps=3 format=3 uid="uid://cvv1b63067me8"]
-
-[ext_resource type="Resource" uid="uid://buyo3m644l8nt" path="res://Resources/Items/Egg.tres" id="1_2e7xj"]
-[ext_resource type="Script" path="res://Scripts/Characters/Inventory/Inventory.gd" id="2_7wxxi"]
-
-[resource]
-script = ExtResource("2_7wxxi")
-items = Array[Resource("res://Scripts/Characters/Inventory/InventoryItems.gd")]([ExtResource("1_2e7xj"), null, null, null, ExtResource("1_2e7xj"), null, null, ExtResource("1_2e7xj")])
